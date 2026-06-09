@@ -919,7 +919,7 @@ Work
     display: block;
 }
 
-.gallery-item, .category-row, .social-icon-link {
+.gallery-item, .social-icon-link {
     background-color: transparent !important;
 }
 
