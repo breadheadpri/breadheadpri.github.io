@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Captcha Visualiser",
+    "type": "video",
+    "thumb": "images/visuals/thumbnail/captcha.jpg",
+    "full": "images/visuals/captcha.mp4"
+  },
+  {
+    "title": "Mind Block Visualiser",
+    "type": "video",
+    "thumb": "images/visuals/thumbnail/mind-block.jpg",
+    "full": "images/visuals/mind-block.mp4"
+  },
+  {
+    "title": "Emboss Text Rain Visualiser",
+    "type": "video",
+    "thumb": "images/visuals/thumbnail/emboss-rain-text.jpg",
+    "full": "images/visuals/emboss-rain-text.mp4"
+  },
+  {
+    "title": "Atlanta Music Video",
+    "type": "image",
+    "thumb": "images/visuals/atlanta.jpg",
+    "full": "images/visuals/atlanta.jpg"
+  },
+  {
+    "title": "Kari Faux Music Video",
+    "type": "image",
+    "thumb": "images/visuals/karii-faux-mv.jpg",
+    "full": "images/visuals/karii-faux-mv.jpg"
+  },
+  {
+    "title": "Watari Music Video",
+    "type": "youtube",
+    "thumb": "images/visuals/watari-mv.jpg",
+    "full": "https://youtu.be/pmAZsX--8Qg?si=2zxo_8PdK-Z6Q-Jw"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Chromakopia Artwork",
+    "type": "image",
+    "thumb": "images/artwork/chromakopia.jpg",
+    "full": "images/artwork/chromakopia.jpg"
+  },
+  {
+    "title": "L Artwork",
+    "type": "image",
+    "thumb": "images/artwork/lawliet.jpg",
+    "full": "images/artwork/lawliet.jpg"
+  },
+  {
+    "title": "Helios Burger Artwork",
+    "type": "image",
+    "thumb": "images/artwork/helios-burger.jpg",
+    "full": "images/artwork/helios-burger.jpg"
+  },
+  {
+    "title": "L Artwork 2",
+    "type": "image",
+    "thumb": "images/artwork/lawliet-2.jpg",
+    "full": "images/artwork/lawliet-2.jpg"
+  },
+  {
+    "title": "Nanamin Artwork",
+    "type": "image",
+    "thumb": "images/artwork/nanamin.jpg",
+    "full": "images/artwork/nanamin.jpg"
+  },
+  {
+    "title": "Megumi Artwork",
+    "type": "image",
+    "thumb": "images/artwork/megumi.jpg",
+    "full": "images/artwork/megumi.jpg"
+  },
+  {
+    "title": "Miguel O'Hara Artwork",
+    "type": "image",
+    "thumb": "images/artwork/miguel_2099.jpg",
+    "full": "images/artwork/miguel_2099.jpg"
+  },
+  {
+    "title": "Spider-Punk Artwork",
+    "type": "image",
+    "thumb": "images/artwork/spider-punk.jpg",
+    "full": "images/artwork/spider-punk.jpg"
+  },
+  {
+    "title": "Lucki Artwork",
+    "type": "image",
+    "thumb": "images/artwork/lucki.jpg",
+    "full": "images/artwork/lucki.jpg"
+  },
+  {
+    "title": "Deb Smikle Artwork",
+    "type": "image",
+    "thumb": "images/artwork/debsmikle.jpg",
+    "full": "images/artwork/debsmikle.jpg"
+  }
+]

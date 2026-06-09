@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Chrome Yu Gif",
+    "type": "image",
+    "thumb": "images/design/chromeyu.gif",
+    "full": "images/design/chromeyu.gif"
+  },
+  {
+    "title": "Yulondia Glass Poster",
+    "type": "image",
+    "thumb": "images/design/yla-glass.jpg",
+    "full": "images/design/yla-glass.jpg"
+  },
+  {
+    "title": "Silver Yu Gif",
+    "type": "image",
+    "thumb": "images/design/silveryu.gif",
+    "full": "images/design/silveryu.gif"
+  },
+  {
+    "title": "Pepsi Poster",
+    "type": "image",
+    "thumb": "images/design/pepsi-poster.jpg",
+    "full": "images/design/pepsi-poster.jpg"
+  },
+  {
+    "title": "Spotify Sustainable",
+    "type": "image",
+    "thumb": "images/design/spotify-sustainable.jpg",
+    "full": "images/design/spotify-sustainable.jpg"
+  },
+  {
+    "title": "Pepsi Poster 2",
+    "type": "image",
+    "thumb": "images/design/pepsi-poster2.jpg",
+    "full": "images/design/pepsi-poster2.jpg"
+  }
+]
