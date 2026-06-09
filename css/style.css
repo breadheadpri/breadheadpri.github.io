@@ -1128,10 +1128,10 @@ Footer
     }
     
     .nav-brand-block {
-        padding-left: 1rem;
+        text-align: center;
     }
     .brand-text{
-        font-size: var(--h5);
+        font-size: var(--h6);
     }
     .latest-work-block {
         width: 200px;
