@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuToggle && menuOverlay && topNavbar) {
         menuToggle.addEventListener('click', () => {
-        const isOpen = menuOverlay.classList.toggle('is-open');
-        topNavbar.classList.toggle('is-open');
- 
-        // Scroll Lock [removing scrollbar & params] 
-        document.documentElement.classList.toggle('no-scroll', isOpen);
-        document.body.classList.toggle('no-scroll', isOpen);
+            const isOpen = menuOverlay.classList.toggle('is-open');
+            topNavbar.classList.toggle('is-open');
+     
+            // Scroll Lock [removing scrollbar & params] 
+            document.documentElement.classList.toggle('no-scroll', isOpen);
+            document.body.classList.toggle('no-scroll', isOpen);
         });
     }
 
@@ -64,20 +64,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupClose = document.getElementById('popupClose');
 
     if (galleryItems.length > 0 && popupDisplay && popupContent && popupClose) {
-
         galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
+            item.addEventListener('click', (e) => {
+                
+                // If it's a YouTube item, bypass the popup entirely 
+                // and let it open normal link settings
+                if (item.classList.contains('youtube-bypass')) {
+                    return; 
+                }
+
+                // Prevent default browser behavior for normal image/video popups
+                e.preventDefault();
+
                 const assetType = item.getAttribute('data-type');
                 const targetUrl = item.getAttribute('data-fullsrc');
 
                 // Clearing old resizing elements
                 popupContent.innerHTML = '';
                 popupContent.className = 'popup-content-box';
-
+                
                 let assetEl;
 
                 if (assetType === 'video') {
-
                     // Video Elements
                     assetEl = document.createElement('video');
                     assetEl.src = targetUrl;
@@ -86,8 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     assetEl.autoplay = true;
                     assetEl.muted = false;
                     assetEl.setAttribute('playsinline', '');
-
-
+                    
                     assetEl.addEventListener('loadedmetadata', () => {
                         if (assetEl.videoHeight > assetEl.videoWidth) {
                             popupContent.classList.add('is-portrait');
@@ -95,22 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             popupContent.classList.add('is-landscape');
                         }
                     });
-
-                } else if (assetType === 'youtube') {
-
-                    // Youtuube Elements
-                    assetEl = document.createElement('iframe');
-                    assetEl.src = `${targetUrl}?autoplay=1&loop=1&playlist=${targetUrl.split('/').pop()}`;
-                    assetEl.setAttribute('allow', 'autoplay; encrypted-media');
-                    assetEl.setAttribute('allowfullscreen', '');
-                    popupContent.classList.add('is-landscape');
                 } else {
-
-                    // Display
+                    // Image/Display Assets Fallback
                     assetEl = document.createElement('img');
                     assetEl.src = targetUrl;
                     assetEl.alt = 'Expanded View';
-
+                    
                     // Calculation for images width higher than 2000px
                     assetEl.addEventListener('load', () => {
                         if (assetEl.naturalWidth > 2000) {
@@ -145,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 videoEl.src = "";
                 videoEl.load();
             }
-
             popupDisplay.classList.remove('is-active');
             document.body.classList.remove('no-scroll');
             popupContent.innerHTML = '';
@@ -156,6 +152,5 @@ document.addEventListener('DOMContentLoaded', () => {
         popupDisplay.addEventListener('click', (e) => {
             if (e.target === popupDisplay) closePopupView();
         });
-        }
-    });
-
+    }
+}); 
