@@ -446,6 +446,12 @@ footer {
     height: 50px;
 }
 
+.social-icon-link svg {
+    width: 40px;
+    height: 40px;
+}
+
+
 .social-icon-link svg path {
     fill: var(--secondary-color); 
     transition: fill 0.2s ease;
